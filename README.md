@@ -23,7 +23,8 @@ Cada repositório especifica a licença aplicável no seu próprio `LICENSE`. Em
 
 ## Autor
 
-Telmo — Business Systems Analyst em sistemas de retalho aéreo (Modern Airline Retailing, NDC), com projetos pessoais em paralelo à atividade profissional.
+Telmo Leitão — Business Systems Analyst em sistemas de retalho aéreo (Modern Airline Retailing, NDC), com projetos pessoais em paralelo à atividade profissional.
+Contacto — telmo.leitao@gmail.com
 
 ---
 
