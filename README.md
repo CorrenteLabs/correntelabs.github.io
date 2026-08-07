@@ -1,4 +1,4 @@
-# Corrente
+# Corrente Labs
 
 Ferramentas e projetos pessoais na interseção entre dados, energia e sistemas — desenvolvidos e mantidos de forma independente.
 
