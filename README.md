@@ -10,7 +10,7 @@ O nome refere-se a três correntes: elétrica, oceânica, de dados. Ponto de par
 Conjunto de ferramentas para trabalhar com mensagens NDC (New Distribution Capability) da IATA, cobrindo as versões de standard 18.1 e 21.3. Inclui validação, parsing e apoio a testes de integração com parceiros de distribuição aérea.
 
 ### [Solar Dashboard](https://github.com/CorrenteLabs/solar-dashboard)
-Dashboard de monitorização de um sistema solar residencial, integrando produção fotovoltaica, armazenamento em bateria, dois veículos elétricos e arbitragem tarifária. Extração de dados automatizada e histórico multi-período.
+Dashboard de monitorização de sistema solar residencial, integrando produção fotovoltaica, armazenamento em bateria, veículos elétricos e arbitragem tarifária. Extração de dados automatizada e histórico multi-período.
 
 ## Licenciamento
 
