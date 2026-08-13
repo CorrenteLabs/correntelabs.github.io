@@ -1,0 +1,13 @@
+<svg width="240" height="60" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Corrente Labs">
+  <defs>
+    <linearGradient id="corrente-grad-readme" x1="0" y1="0" x2="240" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6BA8DD"/>
+      <stop offset="55%" stop-color="#3E8FA8"/>
+      <stop offset="100%" stop-color="#1F6B78"/>
+    </linearGradient>
+  </defs>
+  <path d="M10 30 Q 27 13, 47 30 T 87 30 L 103 17 L 117 40 L 130 17 L 143 40 L 157 30"
+        stroke="url(#corrente-grad-readme)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M157 30 L 172 30 M 184 30 L 199 30 M 211 30 L 226 30"
+        stroke="url(#corrente-grad-readme)" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>
