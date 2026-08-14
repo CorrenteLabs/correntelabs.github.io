@@ -23,7 +23,7 @@ Dashboard de monitorização de sistema solar residencial, integrando produção
 
 Os projetos sob esta organização seguem um esquema de licenciamento em duas camadas:
 
-- **Código** — [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0/)
+- **Código** — [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)
 - **Documentação** — [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Cada repositório especifica a licença aplicável no seu próprio `LICENSE`. Em caso de repositórios com ambos os tipos de conteúdo, a distinção é feita através de ficheiros `LICENSE` (documentação) e `LICENSE-CODE` (código) separados.
