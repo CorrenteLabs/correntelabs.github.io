@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corrente Labs</title>
+<meta name="description" content="Corrente Labs — projetos pessoais na interseção entre dados, energia e sistemas. NDC Tools, Dashboard Solar, e o que vier a seguir.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDQiIGhlaWdodD0iNDQiIHZpZXdCb3g9IjAgMCAyNDAgNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImNvcnJlbnRlLWdyYWQiIHgxPSIwIiB5MT0iMCIgeDI9IjI0MCIgeTI9IjAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzZCQThERCIvPgo8c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iIzNFOEZBOCIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxRjZCNzgiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8cGF0aCBkPSJNMTAgMzAgUSAyNyAxMywgNDcgMzAgVCA4NyAzMCBMIDEwMyAxNyBMIDExNyA0MCBMIDEzMCAxNyBMIDE0MyA0MCBMIDE1NyAzMCIgc3Ryb2tlPSJ1cmwoI2NvcnJlbnRlLWdyYWQpIiBzdHJva2Utd2lkdGg9IjQiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMTU3IDMwIEwgMTcyIDMwIE0gMTg0IDMwIEwgMTk5IDMwIE0gMjExIDMwIEwgMjI2IDMwIiBzdHJva2U9InVybCgjY29ycmVudGUtZ3JhZCkiIHN0cm9rZS13aWR0aD0iNCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo=">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=IBM+Plex+Sans:wght@400;500&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="wrap">
+    <a href="#top" class="nav-brand">
+      <svg width="24" height="24" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="corrente-grad-nav" x1="0" y1="0" x2="240" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#6BA8DD"/><stop offset="55%" stop-color="#3E8FA8"/><stop offset="100%" stop-color="#1F6B78"/>
+          </linearGradient>
+        </defs>
+        <path d="M10 30 Q 27 13, 47 30 T 87 30 L 103 17 L 117 40 L 130 17 L 143 40 L 157 30" stroke="url(#corrente-grad-nav)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M157 30 L 172 30 M 184 30 L 199 30 M 211 30 L 226 30" stroke="url(#corrente-grad-nav)" stroke-width="4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span class="wordmark">Corrente Labs</span>
+    </a>
+    <div class="nav-actions">
+      <div class="lang-toggle">
+        <button data-lang="pt" type="button">PT</button>
+        <button data-lang="en" type="button">EN</button>
+      </div>
+      <a class="icon-link" href="https://github.com/CorrenteLabs" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <svg class="hero-mark" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="corrente-grad-hero" x1="0" y1="0" x2="240" y2="0" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#6BA8DD"/><stop offset="55%" stop-color="#3E8FA8"/><stop offset="100%" stop-color="#1F6B78"/>
+        </linearGradient>
+      </defs>
+      <path class="seg1" pathLength="1000" d="M10 30 Q 27 13, 47 30 T 87 30 L 103 17 L 117 40 L 130 17 L 143 40 L 157 30" stroke="url(#corrente-grad-hero)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path class="seg2" pathLength="1000" d="M157 30 L 172 30 M 184 30 L 199 30 M 211 30 L 226 30" stroke="url(#corrente-grad-hero)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </svg>
+
+    <span class="eyebrow" data-pt="corrente elétrica · corrente oceânica · corrente de dados" data-en="electrical current · ocean current · data current">corrente elétrica · corrente oceânica · corrente de dados</span>
+
+    <h1 data-pt="Três correntes. <span class=&quot;accent&quot;>Um só ponto de partida.</span>" data-en="Three currents. <span class=&quot;accent&quot;>One shared starting point.</span>">Três correntes. <span class="accent">Um só ponto de partida.</span></h1>
+
+    <p class="lede" data-pt="Projetos pessoais que, de outra forma, não têm muito em comum além de quem os escreve. A corrente oceânica é a dominante — mar no sangue, ligação aos Açores." data-en="Personal projects that, otherwise, don't have much in common besides who writes them. The ocean current is the dominant one — sea in the blood, tied to the Azores.">
+      Projetos pessoais que, de outra forma, não têm muito em comum além de quem os escreve. A corrente oceânica é a dominante — mar no sangue, ligação aos Açores.
+    </p>
+
+    <div class="hero-scroll" data-pt="Projetos ↓" data-en="Projects ↓">Projetos ↓</div>
+  </div>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section class="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <span class="section-eyebrow" data-pt="A marca" data-en="The brand">A marca</span>
+      <h2 style="font-family:var(--font-display); font-weight:600; font-size:26px; margin:0 0 18px; color:var(--espuma);" data-pt="Sem empresa, sem produto — só a assinatura de quem escreve" data-en="No company, no product — just the signature of whoever writes it">Sem empresa, sem produto — só a assinatura de quem escreve</h2>
+      <p data-pt="<strong>Corrente Labs</strong> reúne projetos pessoais construídos fora do horário de trabalho, para resolver problemas concretos onde não existiam soluções prontas. Não é uma empresa nem uma marca comercial — é o ponto de partida comum entre projetos que, de outra forma, não teriam nada em comum entre si." data-en="<strong>Corrente Labs</strong> brings together personal projects built outside working hours, to solve concrete problems where no ready-made solution existed. It isn't a company or a commercial brand — it's the shared starting point between projects that, otherwise, wouldn't have anything in common.">
+        <strong>Corrente Labs</strong> reúne projetos pessoais construídos fora do horário de trabalho, para resolver problemas concretos onde não existiam soluções prontas. Não é uma empresa nem uma marca comercial — é o ponto de partida comum entre projetos que, de outra forma, não teriam nada em comum entre si.
+      </p>
+      <p data-pt="Cada projeto é entregue como uma aplicação HTML autónoma, sem servidor e sem dependência de terceiros para funcionar — os dados que processam nunca saem do browser de quem os usa." data-en="Each project ships as a self-contained HTML application, with no server and no third-party dependency to run — the data they process never leaves the browser of whoever is using them.">
+        Cada projeto é entregue como uma aplicação HTML autónoma, sem servidor e sem dependência de terceiros para funcionar — os dados que processam nunca saem do browser de quem os usa.
+      </p>
+    </div>
+    <div class="currents reveal">
+      <div class="current-item">
+        <span class="dot" style="background:var(--cobre);"></span>
+        <div>
+          <h3 data-pt="Corrente elétrica" data-en="Electrical current">Corrente elétrica</h3>
+          <p data-pt="Sistemas, energia, hardware — o Dashboard Solar nasce daqui." data-en="Systems, energy, hardware — the Solar Dashboard comes from here.">Sistemas, energia, hardware — o Dashboard Solar nasce daqui.</p>
+        </div>
+      </div>
+      <div class="current-item">
+        <span class="dot" style="background:var(--ceu-acores);"></span>
+        <div>
+          <h3 data-pt="Corrente oceânica" data-en="Ocean current">Corrente oceânica</h3>
+          <p data-pt="A dominante pessoal — Açores, mar no sangue. É o traço visual que atravessa a marca." data-en="The personal dominant one — Azores, sea in the blood. It's the visual thread that runs through the brand.">A dominante pessoal — Açores, mar no sangue. É o traço visual que atravessa a marca.</p>
+        </div>
+      </div>
+      <div class="current-item">
+        <span class="dot" style="background:var(--mar-profundo);"></span>
+        <div>
+          <h3 data-pt="Corrente de dados" data-en="Data current">Corrente de dados</h3>
+          <p data-pt="Parsing, análise, visualização — o NDC Tools nasce daqui." data-en="Parsing, analysis, visualisation — NDC Tools comes from here.">Parsing, análise, visualização — o NDC Tools nasce daqui.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projetos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-eyebrow" data-pt="Projetos" data-en="Projects">Projetos</span>
+      <h2 data-pt="O que já existe" data-en="What already exists">O que já existe</h2>
+      <p data-pt="Cada projeto abaixo é uma aplicação HTML única, processada inteiramente no browser. Sem contas, sem servidores, sem dados a saírem da tua máquina." data-en="Each project below is a single HTML application, processed entirely in the browser. No accounts, no servers, no data leaving your machine.">Cada projeto abaixo é uma aplicação HTML única, processada inteiramente no browser. Sem contas, sem servidores, sem dados a saírem da tua máquina.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- NDC Tools -->
+      <article class="project-card reveal">
+        <div class="project-body">
+          <div class="project-head">
+            <div class="project-title">
+              <h3>NDC Tools</h3>
+              <span class="version-badge">v1.3.4</span>
+            </div>
+          </div>
+          <p class="project-tagline" data-pt="Parsing e visualização de respostas IATA NDC 18.1" data-en="Parsing and visualisation for IATA NDC 18.1 responses">Parsing e visualização de respostas IATA NDC 18.1</p>
+          <p class="project-desc" data-pt="Cinco ferramentas integradas para trabalhar mensagens NDC (New Distribution Capability): mapas de lugares interativos, comparação de ofertas, serviços ancilares e o detalhe completo de uma reserva. Tudo processado localmente — nenhum XML sai do computador." data-en="Five integrated tools for working with NDC (New Distribution Capability) messages: interactive seat maps, offer comparison, ancillary services, and full order detail. Everything runs locally — no XML ever leaves your machine.">
+            Cinco ferramentas integradas para trabalhar mensagens NDC (New Distribution Capability): mapas de lugares interativos, comparação de ofertas, serviços ancilares e o detalhe completo de uma reserva. Tudo processado localmente — nenhum XML sai do computador.
+          </p>
+          <div class="tag-row">
+            <span class="tag">IATA NDC 18.1</span>
+            <span class="tag">SeatAvailabilityRS</span>
+            <span class="tag">AirShoppingRS</span>
+            <span class="tag">ServiceListRS</span>
+            <span class="tag">OfferPriceRS</span>
+            <span class="tag">OrderViewRS</span>
+          </div>
+          <div class="project-links">
+            <a class="btn" href="https://correntelabs.github.io/NDC_Tools/" target="_blank" rel="noopener noreferrer" data-pt="Ver projeto →" data-en="View project →">Ver projeto →</a>
+          </div>
+        </div>
+        <div class="shot-row">
+          <figure style="margin:0;">
+            <div class="shot-frame"><img src="assets/img/screenshots/ndc-tools-01.png" alt="NDC Tools — Hub" loading="lazy"></div>
+            <figcaption class="shot-caption" data-pt="Hub — as 5 ferramentas" data-en="Hub — the 5 tools">Hub — as 5 ferramentas</figcaption>
+          </figure>
+          <figure style="margin:0;">
+            <div class="shot-frame"><img src="assets/img/screenshots/ndc-tools-02.png" alt="NDC Tools — Seatmap" loading="lazy"></div>
+            <figcaption class="shot-caption" data-pt="Seatmap — mapa de lugares" data-en="Seatmap — seat map">Seatmap — mapa de lugares</figcaption>
+          </figure>
+          <figure style="margin:0;">
+            <div class="shot-frame"><img src="assets/img/screenshots/ndc-tools-03.png" alt="NDC Tools — Offer Price" loading="lazy"></div>
+            <figcaption class="shot-caption" data-pt="Offer Price — comparação de tarifas" data-en="Offer Price — fare comparison">Offer Price — comparação de tarifas</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- Dashboard Solar -->
+      <article class="project-card reveal">
+        <div class="project-body">
+          <div class="project-head">
+            <div class="project-title">
+              <h3 data-pt="Dashboard Solar" data-en="Solar Dashboard">Dashboard Solar</h3>
+              <span class="version-badge">v2.6</span>
+            </div>
+          </div>
+          <p class="project-tagline" data-pt="Monitorização de produção fotovoltaica, bateria e carregamento de VE" data-en="Monitoring for solar production, battery storage and EV charging">Monitorização de produção fotovoltaica, bateria e carregamento de VE</p>
+          <p class="project-desc" data-pt="Lê relatórios do FusionSolar e sessões da wallbox para calcular KPIs, payback e sazonalidade — com deteção automática das fases da instalação (solar, solar+bateria, solar+VE) a partir dos dados carregados, sem datas fixas assumidas." data-en="Reads FusionSolar reports and wallbox sessions to calculate KPIs, payback, and seasonality — automatically detecting the installation's phases (solar, solar+battery, solar+EV) straight from the loaded data, with no fixed dates assumed.">
+            Lê relatórios do FusionSolar e sessões da wallbox para calcular KPIs, payback e sazonalidade — com deteção automática das fases da instalação (solar, solar+bateria, solar+VE) a partir dos dados carregados, sem datas fixas assumidas.
+          </p>
+          <div class="tag-row">
+            <span class="tag">FusionSolar</span>
+            <span class="tag">Wallbox</span>
+            <span class="tag">Payback</span>
+            <span class="tag">KPIs</span>
+          </div>
+          <div class="project-links">
+            <a class="btn" href="https://correntelabs.github.io/solar-dashboard/" target="_blank" rel="noopener noreferrer" data-pt="Ver projeto →" data-en="View project →">Ver projeto →</a>
+          </div>
+        </div>
+        <div class="shot-row">
+          <figure style="margin:0;">
+            <div class="shot-frame"><img src="assets/img/screenshots/solar-dashboard-01.png" alt="Dashboard Solar — visão geral" loading="lazy"></div>
+            <figcaption class="shot-caption" data-pt="Visão geral — KPIs e upload" data-en="Overview — KPIs and upload">Visão geral — KPIs e upload</figcaption>
+          </figure>
+          <figure style="margin:0;">
+            <div class="shot-frame"><img src="assets/img/screenshots/solar-dashboard-02.png" alt="Dashboard Solar — gráficos" loading="lazy"></div>
+            <figcaption class="shot-caption" data-pt="Gráficos — produção, consumo e payback" data-en="Charts — production, consumption and payback">Gráficos — produção, consumo e payback</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- Future project ghost card -->
+      <article class="project-card future reveal">
+        <div class="future-inner">
+          <svg class="ghost-mark" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M10 30 Q 27 13, 47 30 T 87 30 L 103 17 L 117 40 L 130 17 L 143 40 L 157 30" stroke="#6E8A97" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M157 30 L 172 30 M 184 30 L 199 30 M 211 30 L 226 30" stroke="#6E8A97" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </svg>
+          <h3 data-pt="Próximo projeto" data-en="Next project">Próximo projeto</h3>
+          <p data-pt="Ainda por anunciar. Aparece aqui assim que estiver pronto para partilhar." data-en="Not announced yet. It'll show up here once it's ready to share.">Ainda por anunciar. Aparece aqui assim que estiver pronto para partilhar.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ LICENSING ============ -->
+<section class="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-eyebrow" data-pt="Licenciamento" data-en="Licensing">Licenciamento</span>
+      <h2 data-pt="Uso não comercial, em duas camadas" data-en="Non-commercial use, in two layers">Uso não comercial, em duas camadas</h2>
+      <p data-pt="Todos os projetos sob esta marca seguem o mesmo esquema, consoante o tipo de conteúdo:" data-en="All projects under this brand follow the same scheme, depending on content type:">Todos os projetos sob esta marca seguem o mesmo esquema, consoante o tipo de conteúdo:</p>
+    </div>
+    <div class="license-grid reveal">
+      <div class="license-card">
+        <h3 data-pt="Código" data-en="Code">Código</h3>
+        <p data-pt="Todo o código-fonte (HTML, CSS, JS) de cada projeto." data-en="All source code (HTML, CSS, JS) of each project.">Todo o código-fonte (HTML, CSS, JS) de cada projeto.</p>
+        <a href="https://polyformproject.org/licenses/noncommercial/1.0.0" target="_blank" rel="noopener noreferrer">PolyForm Noncommercial License 1.0.0 ↗</a>
+      </div>
+      <div class="license-card">
+        <h3 data-pt="Documentação" data-en="Documentation">Documentação</h3>
+        <p data-pt="Texto, guias, README e conteúdo escrito." data-en="Text, guides, README and written content.">Texto, guias, README e conteúdo escrito.</p>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0 ↗</a>
+      </div>
+    </div>
+    <p class="license-note reveal" data-pt="Cada repositório especifica a licença aplicável nos seus próprios ficheiros LICENSE (documentação) e LICENSE-CODE (código)." data-en="Each repository specifies the applicable license in its own LICENSE (documentation) and LICENSE-CODE (code) files.">Cada repositório especifica a licença aplicável nos seus próprios ficheiros LICENSE (documentação) e LICENSE-CODE (código).</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-mark">
+      <svg width="20" height="20" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="corrente-grad-footer" x1="0" y1="0" x2="240" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#6BA8DD"/><stop offset="55%" stop-color="#3E8FA8"/><stop offset="100%" stop-color="#1F6B78"/>
+          </linearGradient>
+        </defs>
+        <path d="M10 30 Q 27 13, 47 30 T 87 30 L 103 17 L 117 40 L 130 17 L 143 40 L 157 30" stroke="url(#corrente-grad-footer)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M157 30 L 172 30 M 184 30 L 199 30 M 211 30 L 226 30" stroke="url(#corrente-grad-footer)" stroke-width="4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span style="font-family:var(--font-display); font-weight:600; font-size:13px; color:var(--espuma);">Corrente Labs</span>
+    </div>
+    <p>© Telmo Leitão · <a href="mailto:telmo.leitao@gmail.com">telmo.leitao@gmail.com</a> · <a href="https://github.com/CorrenteLabs" target="_blank" rel="noopener noreferrer">github.com/CorrenteLabs</a></p>
+    <p data-pt="Código sob PolyForm Noncommercial 1.0.0 · Documentação sob CC BY-NC-SA 4.0" data-en="Code under PolyForm Noncommercial 1.0.0 · Documentation under CC BY-NC-SA 4.0">Código sob PolyForm Noncommercial 1.0.0 · Documentação sob CC BY-NC-SA 4.0</p>
+    <p class="disclaimer" data-pt="Projetos pessoais e não comerciais, sem afiliação com a atividade profissional do autor." data-en="Personal, non-commercial projects, with no affiliation to the author's professional activity.">Projetos pessoais e não comerciais, sem afiliação com a atividade profissional do autor.</p>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
